@@ -1,0 +1,534 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    font-size: 16px;
+}
+body{
+    background-color: #3B3A3A;
+}
+button{
+    background-color: transparent;
+    border: 0;
+    padding-right: 25px;
+
+}
+/* header---------------------------------------------------------- */
+header{
+    width: 100%;
+    height:90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 900;
+
+
+}
+.logo{
+    height: 40px;
+    width: auto;
+    padding-left: 5%;
+    
+}
+.logo > a > img{
+    height: 100%;
+    width: 100%;
+}
+header > i{
+    padding-right: 5%;
+} 
+
+.fas{
+    color: #D9D9D9;
+
+
+}
+header > nav > ul{
+    display: none;
+    list-style: none;
+}
+
+/* main hero------------------------------------------------*/
+.hero{
+    background-color: pink;
+    height: 30vh;
+    position: relative;
+
+}
+.hero > .heading1{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    background-color: #3b3a3a70;
+}
+.hero > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.title-container{
+    color: #D9D9D9;
+    text-align: end;
+    font-family: sans-serif;
+    padding-right: 5%;
+}
+h1{
+    font-size: 23px;
+}
+
+/* productos destacados ----------------------------------------------*/
+.destacado{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #D9D9D9;
+    text-align: left;
+    padding: 15px 0px 7px 15px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    grid-gap: 15px;
+    align-items: center;
+    justify-content:center;
+    padding: 30px 15px 30px 15px;
+
+    
+
+}
+.articulo{
+    width: 100%;
+}
+
+.articulo > a > .foto{
+    width: 100%;
+}
+.tituloarticulo{
+    font-family: sans-serif;
+    font-size: 9px;
+    color: #D9D9D9;
+}
+.descripcionarticulo{
+    font-family: sans-serif;
+    font-weight:lighter;
+    color: #D9D9D9;
+    font-size: 9px;
+    padding-top: 1%;
+}
+
+h4{
+    font-family: sans-serif;
+    color:#D9D9D9 ;
+    font-size: 0.6em;
+    font-weight: lighter;
+
+}
+
+/* footer -------------------------------------------------------------------*/
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+
+}
+.fab{
+    color:#D9D9D9 ;
+}
+
+.separacion{
+    padding: 0 0 0 5%;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    padding: 20px ;
+    justify-content: space-between;
+
+}
+
+
+ul{
+    font-family: sans-serif;
+    color:#D9D9D9 ;
+    font-size: 0.6em;
+    font-weight: lighter;
+
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+}
+
+.texto2{
+    font-family: sans-serif;
+
+}
+.articuloficha > .texto2 > .tituloarticulo2{
+    font-size: 18px;
+    padding-top: 15px;
+    color: #D9D9D9;
+    text-align: left;
+
+}
+.articuloficha > .texto2 >.descripcion2{
+    font-size: 12px;
+    padding-top: 10px;
+    color: #D9D9D9;
+    text-align: left;
+
+}
+.articuloficha > .texto2 >.descripciondelproducto{
+    font-size: 18px;
+    padding-top: 25px;
+    color: #D9D9D9;
+    text-align: left;
+
+}
+.articuloficha > .texto2 > .masinfo{
+    font-size: 12px;
+    padding-top: 13px;
+    color: #D9D9D9;
+    text-align: left;
+
+}
+.productosrelacionados{
+    color: #D9D9D9;
+    text-align: left;
+    padding: 20px 0px 0px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+
+}
+
+.artcontenedor{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: sans-serif;
+
+}
+.foto2{
+    width: 75%;
+    margin: auto;
+}
+.contenedorimagen{
+    display: flex;
+    justify-content: center;
+}
+
+/* ipad ____________________________________________________________*/
+@media screen and (min-width:768px) {
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 30px;
+        grid-gap: 20px;
+    }
+    .hero > .heading1{
+        position: absolute;
+        top: 70%;
+        left: 25%;
+        background-color: #3b3a3a70;
+    }
+    .title-container{
+        color: #D9D9D9;
+        text-align: end;
+        font-family: sans-serif;
+        padding-right: 5%;
+    }
+    h1{
+        font-size: 25px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        font-size: 17px;
+        justify-content: space-between;
+        padding: 50px 50px 25px 50px;
+
+    
+    }
+    .iconos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 150px 10px 150px;
+    }
+    .footer{
+        width: 100%;
+        height: 170px;
+        background-color: #000000;
+    
+    }
+    header{
+        width: 100%;
+        height:100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        z-index: 900;
+    
+    }
+    .destacado{
+        font-family: sans-serif;
+        font-size: 15px;
+        color: #D9D9D9;
+        text-align: left;
+        padding: 15px 20px 7px 30px;
+    }
+    .tituloarticulo{
+        font-size: 11px;
+    }
+    .descripcionarticulo{
+
+        font-size: 10px;
+    
+    }
+    .destacado > .descripcion-proyectos{
+        font-size: 12px;
+
+    }
+    /* articulo ficha */
+    .artcontenedor{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        font-family: sans-serif;
+
+    }
+    .foto2{
+        width: 50%;
+        margin: auto;
+
+    }
+    .contenedorimagen{
+        display: flex;
+        justify-content: center;
+    }
+    .texto2{
+        padding-top: 20px;
+    }
+    .articuloficha > .texto2 > .tituloarticulo2{
+        font-size: 25px;
+        padding-top: 15px;
+        color: #D9D9D9;
+        text-align: left;
+
+    }
+    .articuloficha > .texto2 >.descripcion2{
+        font-size: 15px;
+        padding-top: 10px;
+        color: #D9D9D9;
+        text-align: left;
+
+    }
+    .articuloficha > .texto2 >.descripciondelproducto{
+        font-size: 20px;
+        padding-top: 25px;
+        color: #D9D9D9;
+        text-align: left;
+
+    }
+    .articuloficha > .texto2 > .masinfo{
+        font-size: 14px;
+        padding-top: 13px;
+        color: #D9D9D9;
+        text-align: left;
+
+    }
+    .productosrelacionados{
+        color: #D9D9D9;
+        text-align: left;
+        padding: 10px 30px 10px 30px;
+        font-size: 25px;
+        font-family: sans-serif;
+
+    }
+
+    
+}
+
+/* desktop ____________________________________________________________*/
+@media screen and (min-width:992px) {
+    .articulo > a > .foto{
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 40px 70px 70px 70px;
+        grid-gap: 40px;
+    }
+    .hero{
+        height: 85vh;
+        position: relative;
+    
+    }
+    .hero > .heading1{
+        position: absolute;
+        top: 85%;
+        left: 40%;
+        background-color: #3b3a3a70;
+    }
+    h1{
+        font-size: 40px;
+    }
+    #menu{
+        display: none;
+    }
+    .lista{
+        display:inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    header > nav > ul{
+        display: inherit;
+        list-style: none;
+        position: relative;
+    }
+   
+
+    .lista>a{
+        color: #D9D9D9;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .lista+.lista{
+        border-left: 1px solid #D9D9D9;
+
+        
+    }
+  
+    .logo{
+        height: 30px;
+        width: auto;
+        padding-left: 5%;
+        
+    }
+    header{
+        width: 100%;
+        height: 130px;
+    
+    }
+
+    .destacado{
+        font-family: sans-serif;
+        font-size: 18px;
+        color: #D9D9D9;
+        text-align: left;
+        padding: 30px 0px 0px 70px;
+    }
+    .destacado > .descripcion-proyectos{
+        font-size: 16px;
+        padding-right: 70px;
+    }
+
+    .tituloarticulo{
+        font-size: 15px;
+    }
+    .descripcionarticulo{
+
+        font-size: 13px;
+    
+    }
+    .info{
+        font-size: 22px;
+        padding: 50px 170px 25px 170px;
+
+    
+    }
+    .iconos{
+
+        padding: 10px 280px 10px 280px;
+    }
+
+
+
+
+
+ 
+
+
+
+
+    /* ficha articulo________________________________________________*/
+    .texto2{
+        
+        font-family: sans-serif;
+        width: 65%;
+    }
+    .articuloficha > .texto2 > .tituloarticulo2{
+        font-size: 18px;
+        padding-top: 15px;
+        color: #D9D9D9;
+        text-align: left;
+
+    }
+    .articuloficha > .texto2 >.descripcion2{
+        font-size: 12px;
+        padding-top: 10px;
+        color: #D9D9D9;
+        text-align: left;
+
+    }
+    .articuloficha > .texto2 >.descripciondelproducto{
+        font-size: 18px;
+        padding-top: 25px;
+        color: #D9D9D9;
+        text-align: left;
+        padding-top: 70px;
+
+    }
+    .articuloficha > .texto2 > .masinfo{
+        font-size: 12px;
+        color: #D9D9D9;
+        text-align: left;
+        padding-right: 50px;
+
+    }
+
+    .artcontenedor{
+        display: flex;
+        flex-direction: row;
+        padding: 10px 70px 20px 70px;
+        font-family: sans-serif;
+
+    }
+    .foto2{
+        width: 500px;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .productosrelacionados{
+        padding-left: 70px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    .articuloficha{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+   /* pagina altavoces__________________________ */
+   .descripcion-proyectos{
+    font-family: sans-serif;
+    font-size: 10px;
+    color: #D9D9D9;
+    padding: 10px 10px 0px 0px;
+    }
+
+
+}
